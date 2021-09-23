@@ -8,8 +8,9 @@
 
   <title>Curiosity</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="icon" href="/static/imgs/site.ico">
-  <link rel="stylesheet" href="/static/css/layout.css">
+  <link rel="stylesheet" href="/static/css/site.css">
 </head>
 
 <h1>
@@ -28,22 +29,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notícias</a>
+              <a class="nav-link" href="{{ url_for('news_page') }}">Notícias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Música</a>
+              <a class="nav-link" href="{{ url_for('songs_page') }}">Música</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contate-nos!</a>
+              <a class="nav-link" href="{{ url_for('contact_page') }}">Contate-nos!</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabalhe conosco!</a>
+              <a class="nav-link" href="{{ url_for('cadastro_page') }}">Trabalhe conosco!</a>
             </li>
         </div>
     </div>
@@ -81,10 +82,11 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h5>
+        <h4>
           <font color="black">O Curiosity trata-se de um site de notícias que atua em diferentes meios promovendo o conhecimento e a conscientização pública, mobilização e articulação política, sempre de forma independente. Confira as notícias de hoje sobre política, economia, internacional, músicas, filmes e mais!! As principais notícias do Brasil e do mundo com credibilidade na informação você encontra aqui. O curiosity, também permite que o usuário encontre notícias, entretenimento e sites de humor, entre outros serviços e conteúdos.</font>
         </h5>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
