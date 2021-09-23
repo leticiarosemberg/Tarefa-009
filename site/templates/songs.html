@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Curiosity</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="icon" href="/static/imgs/site.ico">
+  <link rel="stylesheet" href="/static/css/site.css">
+
+  <style>
+    h1, h2 {
+  font-family: Arial Black;
+  color: #8b0000;
+  text-align: center;
+    }
+
+    h4 {
+  color: #ff0000;
+   }
+
+    h6 {
+  color: #ffffff;
+   }
+
+   body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-kEJWBOSfvHq6Ij2q0iM85iVBrsJdsaRetgv4XIRUKYZ7MfWFS8-Ten8i4AepnQYJDW0&usqp=CAU");
+   }
+  </style>
+</head>
+
+<h1>
+  <p align="center">Curiosity
+</h1>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img height="32" width="32" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/monitor_dashboard_icon_136391.png">
+        <a class="navbar-brand" href="#"><b>Curiosity</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('news_page') }}">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('songs_page') }}">Música</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('contact_page') }}">Contate-nos!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('cadastro_page') }}">Trabalhe conosco!</a>
+            </li>
+        </div>
+    </div>
+  </nav>
+  <p>
+  <h2>As mais ouvidas</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://i.scdn.co/image/ab67616d0000b273d21c0d1a19d80f220e334e23" alt="butter">
+          <div class="card-body">
+            <h6 class="card-title">BUTTER</h6>
+            <p class="card-text">
+              BTS<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=ymaIzkXY8nQ" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/pt/0/07/Stay_-_The_Kid_Laroi_e_Justin_Bieber.png" class="card-img-top" alt="stay">
+          <div class="card-body">
+            <h6 class="card-title">STAY</h6>
+            <p class="card-text">
+              The Kid Laroi<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=kTJczUoc26U" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/pt/c/c7/Dua_Lipa_-_Future_Nostalgia.png" class="card-img-top" alt="levitating">
+          <div class="card-body">
+            <h6 class="card-title">LEVITATING</h6>
+            <p class="card-text">
+              Dua Lipa<br>
+              2020
+            </p>
+            <a href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://i.scdn.co/image/ab67616d0000b2730fe2deadb7db9b91d1c30fac" alt="noeasy">
+          <div class="card-body">
+            <h6 class="card-title">THUNDEROUS</h6>
+            <p class="card-text">
+              Stray Kids<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=EaswWiwMVs8&vl=en" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://cdns-images.dzcdn.net/images/cover/4acc3760e12996fe21a77115fc67760b/500x500.jpg" class="card-img-top" alt="theweeknd">
+          <div class="card-body">
+            <h6 class="card-title">SAVE YOUR YEARS</h6>
+            <p class="card-text">
+              The Weeknd ft. Ariana Grande<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=LIIDh-qI9oI" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://portalpopline.com.br/wp-content/uploads/2021/06/ed-sheeran-bad-habits.jpg" class="card-img-top" alt="edinho">
+          <div class="card-body">
+            <h6 class="card-title">BAD HABITS</h6>
+            <p class="card-text">
+              Ed Sheeran<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=orJSJGHjBLI" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/pt/9/96/Capa-AM_%28oficial%29.jpeg" alt="arabella">
+          <div class="card-body">
+            <h6 class="card-title">ARABELLA</h6>
+            <p class="card-text">
+              Artic Monkeys<br>
+              2013
+            </p>
+            <a href="https://www.youtube.com/watch?v=Nj8r3qmOoZ8" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/712U0PCvjES._AC_SL1200_.jpg" class="card-img-top" alt="olivia">
+          <div class="card-body">
+            <h6 class="card-title">GOOD 4 U</h6>
+            <p class="card-text">
+              Olivia Rodrigo<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=gNi_6U5Pm_o" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://cdns-images.dzcdn.net/images/cover/44b7f041bdb1e32d56d4f4aeda019d1f/500x500.jpg" class="card-img-top" alt="arcade">
+          <div class="card-body">
+            <h6 class="card-title">ARCADE</h6>
+            <p class="card-text">
+              Duncan Laurence<br>
+              2019
+            </p>
+            <a href="https://www.youtube.com/watch?v=oFrvRiixXcA" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Golden_de_Harry_Styles.png" alt="golden">
+          <div class="card-body">
+            <h6 class="card-title">GOLDEN</h6>
+            <p class="card-text">
+              Harry Styles<br>
+              2019
+            </p>
+            <a href="https://www.youtube.com/watch?v=P3cffdsEXXw" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/9/5/7/c/1051431616762945.jpg" class="card-img-top" alt="peaches">
+          <div class="card-body">
+            <h6 class="card-title">PEACHES</h6>
+            <p class="card-text">
+              Justin Bieber<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=tQ0yjYUFKAE" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-12">
+
+        <div class="card text-white bg-dark mb-3" style="max-width: 16rem;">
+          <img src="https://i.ytimg.com/an/xA5hlB6bScc/13558389429328072800_mq.jpg?v=604184b4" class="card-img-top" alt="mars">
+          <div class="card-body">
+            <h6 class="card-title">LEAVE THE DOOR OPEN</h6>
+            <p class="card-text">
+              Bruno Mars<br>
+              2021
+            </p>
+            <a href="https://www.youtube.com/watch?v=adLGHcj_fmA" class="btn btn-primary">Ouça</a>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
