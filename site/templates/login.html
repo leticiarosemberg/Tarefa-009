@@ -54,27 +54,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notícias</a>
+              <a class="nav-link" href="{{ url_for('news_page') }}">Notícias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Música</a>
+              <a class="nav-link" href="{{ url_for('songs_page') }}">Música</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contate-nos!</a>
+              <a class="nav-link" href="{{ url_for('contact_page') }}">Contate-nos!</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabalhe conosco!</a>
+              <a class="nav-link" href="{{ url_for('cadastro_page') }}">Trabalhe conosco!</a>
             </li>
         </div>
     </div>
   </nav>
-
   <div class="container-fluid">
     <form class="login">
       <h1 align=center> Login</h1>
