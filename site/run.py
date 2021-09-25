@@ -27,3 +27,11 @@ def songs_page():
 @app.route('/contact')
 def contact_page():
     return render_template('contact.html')
+
+@app.route('/exemplos')
+def exemplos_page():
+    return render_template('exemplos.html')
+
+@app.route('/projeto')
+def projeto_page():
+    return render_template('projeto.html')

@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>projeto</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="icon" href="/static/imgs/site.ico">
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="315px" width="100%"
+src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img height="315px" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" class="d-block w-100" alt="imagem 2">
+    </div>
+    <div class="carousel-item">
+      <img height="315px" width="100%" src="https://cdn.pixabay.com/photo/2016/08/06/11/06/eurasian-eagle-owl-1574166_960_720.jpg"alt="imagem 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img height="32" width="32" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/monitor_dashboard_icon_136391.png">
+      <a class="navbar-brand" href="#"><b>Curiosity</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('news_page') }}">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('songs_page') }}">Música</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('exemplos_page') }}">Exemplos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('projeto_page') }}">Projeto Integrador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('contact_page') }}">Contate-nos!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('cadastro_page') }}">Trabalhe conosco!</a>
+            </li>
+      </div>
+  </div>
+</nav><p>
+
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <div class="alert alert-success">
+        <h4 align="center">Equipe:</h6>
+        <h4 align="center">Leticia</h4>
+        <h4 align="center">Matheus</h4>
+        <h4 align="center">Cristina</h4>
+        <h4 align="center">Ângela</h4>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="alert alert-secondary">
+        <h3 align="center">Meio Ambiente</h3>
+        <h4>O projeto se trata do desenvolvimento de uma aplicação web voltada a uma ONG de preservação ambiental.<p>
+
+<h4>Algumas implementações:</h4>
+<h4>- Login/Cadastro(Membros da ONG teriam acesso restrito a determinadas partes do site);</h4>
+          <h4>- Notícias (principais notícias sobre o meio ambiente no Brasil);</h4>
+<h4>- Campanhas (campanhas e ações realizadas pela ONG);</h4>
+<h4>- Doações(que poderiam ser feitas por usuários cadastrados e não cadastrados);</h4>
+
+          <h4>Outras implementações a serem discutidas.</h4><h4>
+      </div>
+    </div></p>
+      <footer>
+      <div class="col-12">
+      <div class="alert alert-light">
+        <h6 align="center">ProjetoIntegrador</h6>
+        <h6 align="center">Equipe 2<h6>
+          </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+
+</html>
