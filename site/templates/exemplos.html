@@ -1,0 +1,232 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Exemplos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="icon" href="/static/imgs/site.ico">
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<div class="container">
+  <h2 align="center">Exemplos<h2>
+</div><p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img height="32" width="32" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/monitor_dashboard_icon_136391.png">
+        <a class="navbar-brand" href="#"><b>Curiosity</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('news_page') }}">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('songs_page')}}">Música</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('exemplos_page') }}">Exemplos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('projeto_page') }}">Projeto Integrador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('contact_page') }}">Contate-nos!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('cadastro_page') }}">Trabalhe conosco!</a>
+            </li>
+        </div>
+    </div>
+  </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="200px"
+src="https://contactoficial.com.br/wp-content/uploads/2020/10/contact-estampas-colorido-azul-pastel.png" class="d-block w-100" alt="imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img height="200px" src="https://image.freepik.com/fotos-gratis/plano-de-fundo-texturizado-de-concreto-vinheta-rosa-pastel_53876-129734.jpg" class="d-block w-100" alt="imagem 2">
+    </div>
+    <div class="carousel-item">
+      <img height="200px" src="https://image.freepik.com/fotos-gratis/fundo-de-ceu-pastel-com-espaco-de-texto_53876-125302.jpg" class="d-block w-100" alt="imagem 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><p>
+
+    <p class="h4" align="center">Texto</p>
+
+    <p class="font-monospace" text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a gravida dolor. Vivamus fermentum dictum quam et porttitor. Morbi nisi erat, dapibus sit amet congue vitae, congue at urna. Fusce a nulla convallis, maximus tellus id, iaculis lorem. Mauris viverra magna in metus facilisis dapibus. Donec nec rhoncus neque. Sed sodales mi nibh, ac mollis arcu feugiat id. Phasellus vulputate commodo massa eu feugiat. Mauris vestibulum mi et urna iaculis pharetra. Integer ut augue ut ex bibendum tempus eu ut lorem.
+    </p>
+
+    <h4 align="center" class="text-light bg-secondary">Tabela</h4><p>
+    <table class="table table-primary table-striped">
+  <thead>
+    <tr>
+      <th scope="col">N</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Sobrenome</th>
+      <th scope="col">Twitter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Leticia</td>
+      <td>Rosemberg</td>
+      <td>@tskhj</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Matheus</td>
+      <td>Monteiro</td>
+      <td>@fstg</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Cristina</td>
+      <td>Araujo</td>
+      <td>@acjo</td>
+    </tr>
+    <tr>
+     <th scope="row">4</th>
+      <td>Ângela</td>
+      <td>Santiago</td>
+      <td>@jonaw</td>
+    </tr>
+  </tbody>
+</t>
+    </tbody>
+</table>
+  </p>
+ <h4 align="center" class="text-light bg-secondary">Coluna e Grid</h4><p>
+
+  <div class="container px-4">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">CSS</h4>
+  <p>O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação.</p>
+  <hr>
+  <p class="mb-0">
+ </p>
+</div>
+    </div><p>
+
+  <h4 align="Center" class="text-light bg-secondary">Cartão<h4><p>
+    <div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h5 class="card-title">HTML</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Significado</h6>
+    <p class="card-text">O HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos.</p>
+    <a href="#" class="card-link" ><button type="button" class="btn btn-outline-primary">Saber mais</button></a>
+</div>
+    </div></p>
+    <h4 align="center" class="text-light bg-secondary">Imagem<h4><p>
+      <img height="250px"
+src="https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg" class="rounded mx-auto d-block" alt="imagem 1"></p>
+
+    <h4 align="center" class="text-light bg-secondary">Figura<h4><p>
+      <figure class="figure">
+  <img height="100px" width="50%" src="https://cdn.pixabay.com/photo/2021/08/22/15/39/kid-6565461_960_720.jpg" class="figure-img img-fluid rounded" alt="imagem 2">
+  <figcaption class="figure-caption">Menina dançando.</figcaption>
+</figure><p>
+      <h4 align="center" class="text-light bg-secondary">Flex</h4><p>
+      <div class="container">
+        <div class="d-inline-flex p-2 bd-highlight"><h4>Integer ut augue ut ex bibendum tempus eu ut lorem.</h4></div></div><p>
+      <h4 align="center" class="text-light bg-secondary">Alinhamento Vertical<h4><p>
+        <table style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">Baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-middle">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table><p>
+        <h4 align="center" class="text-light bg-secondary">Modal<h4><p>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></p>
+          <h4 align="center" class="text-light bg-secondary">Tooltip<h4><p>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button><p>
+            <h4 align="center" class="text-light bg-secondary">Toast<h4><p>
+          <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div></p>
+              <h4 align="center" class="text-light bg-secondary">Breadcrumb<h4><p>
+              <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dados</li>
+  </ol>
+</nav>
+</body>
+
+</html>
