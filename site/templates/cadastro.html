@@ -21,17 +21,17 @@
       text-align: center;
       font-weight: 500;
     }
-    #nome,#email,#senha,#end,#enviar,#anexo {
+    #nome,#email,#senha,#end,#enviar,#anexo,#estadoC{
       display: block;
       outline: none;
       border: 1px solid;
       border-radius: 20px;
       text-align: center;
     }
-    #nome,#email,#senha,#end {
+    #nome,#email,#senha,#end,#estadoC {
       margin: 5px auto;
       padding: 10px 5px;
-      width: 200px;
+      width: 300px;
     }
     #anexo {
       margin: 5px auto;
@@ -96,6 +96,14 @@
       <input id="senha" type="password" name="senha" placeholder="Senha" required>
       <input id="end" type="textarea" name="endereco" placeholder="Cidade, bairro, rua" required>
 
+      <select id="estadoC" class="form-select" aria-label="Default select example">
+        <option selected>Estado Cívil</option>
+        <option value="1">Solteiro(a)</option>
+        <option value="2">Casado(a)</option>
+        <option value="3">Viuvo(a)</option>
+        <option value="4">Divorciado(a)</option>
+      </select>
+
       <p><br></p>
 
       <h3>Cargo</h3>
@@ -114,10 +122,10 @@
       <p><br></p>
 
       <h3>Voce é maior de 18 anos?</h3>
-      <input type="radio" name="radio" value="option1">
+      <input type="radio" name="idade" value="option1" id="inlineRadio1">
       <label class="form-check-label" for="inlineRadio1">SIM</label>
 
-      <input type="radio" name="radio" value="option1">
+      <input type="radio" name="idade" value="option1" id="inlineRadio1">
       <label class="form-check-label" for="inlineRadio1">NÃO</label>
 
       <input id="enviar" type="submit" value="Enviar">

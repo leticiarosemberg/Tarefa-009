@@ -8,15 +8,16 @@ app.secret_key = '120302'
 app.debug = True
 
 usuarios = [
-    {
+    {'id': '',
      'nome': '',
      'email': '',
      'senha': '',
      'endereco': '',
+     'estadoC':'',
      'checkboxedi': '',
      'checkboxred': '',
      'curriculo': '',
-     'radio': ''
+     'idade': ''
      }
 ]
 
@@ -50,17 +51,22 @@ def projeto_page():
 
 @app.route('/cadastro')
 def cadastro_page():
-    return render_template('cadastro.html')
+    return render_template('cadastro.html', )
 
 @app.post('/novocadastro')
 def cadastrar_page():
+    id_nv = len(usuarios)+1
     nome_nv = request.form['nome']
     email_nv = request.form['email']
     senha_nv = request.form['senha']
     endereco_nv = request.form['endereco']
 
     try:
-        checkboxedi_nv = request.form['checkboxedi']
+        estadoC_nv = request.form['estadoC']
+    except BadRequestKeyError:
+        estadoC_nv = None
+    try:
+        checkboxedi_nv = request.form['ceckboxedi']
     except BadRequestKeyError:
         checkboxedi_nv = None
     try:
@@ -71,21 +77,23 @@ def cadastrar_page():
         curriculo_nv = request.form['curriculo']
     except BadRequestKeyError:
         curriculo_nv = None
-    radio_nv = request.form['radio']
+    idade_nv = request.form['idade']
 
     novo_usuario = {
+        'id': id_nv,
         'nome': nome_nv,
         'email': email_nv,
         'senha': senha_nv,
         'endereco': endereco_nv,
+        'estadoC' : estadoC_nv,
         'checkboxedi': checkboxedi_nv,
         'checkboxred': checkboxred_nv,
         'curriculo': curriculo_nv,
-        'radio': radio_nv
+        'idade': idade_nv
         }
     usuarios.append(novo_usuario)
 
-    flash(f'Curriculo de {nome_nv} enviado com sucesso! Entraremos em contato assim que possível :)')
+    flash(f'Currículo de {nome_nv} enviado com sucesso! Entraremos em contato assim que possível :)')
 
     return redirect('/home')
 
@@ -106,7 +114,7 @@ def contatar_page():
         }
     contact.append(novo_contact)
 
-    flash(f'Olá, {nome_nv} seu recado foi enviado! Responderemos assim que possível :)')
+    flash(f'Olá, {nome_nv} seu recado foi enviado! :)')
 
     return redirect('/home')
 
@@ -126,7 +134,7 @@ def entrar_page():
             res = False
 
     if res == True:
-        flash('Espero que goste do nosso site :)')
+        flash('Logado com sucesso!!')
         return redirect('/home')
     else:
         flash('Algo deu errado :(  tente novamente!')
